@@ -1,0 +1,54 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0,0,0,0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #00c853;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b341;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
