@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Account Devices</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body style="background-image: url('/images/bg2.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h1>Devices for <%= user.email %></h1>
+    <p><%= message %></p>
+    <ul>
+      <% user.devices.forEach(d => { %>
+        <li><strong>Device:</strong> <%= d.device %> <br> <strong>IP:</strong> <%= d.ip %> <br> <strong>Last Access:</strong> <%= d.date.toLocaleString() %></li>
+      <% }) %>
+    </ul>
+    <a href="/">Check Another Account</a>
+  </div>
+</body>
+</html>
